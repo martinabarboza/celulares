@@ -1,0 +1,514 @@
+/* ! Base Style */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+  color: #000;
+  padding-bottom: 30px;
+}
+
+p {
+  line-height: 28px;
+  color: #fff;
+  font-weight: 300;
+}
+p1 {
+  color: #fff;
+  font-weight: 300;
+  translate: -444px 427px;
+}
+h3 {
+  color: #fff;
+}
+
+.big-text {
+  font-size: 70px;
+  font-weight: 900;
+  color: #fff;
+}
+.med-text {
+  font-size: 40px;
+  color: #fff;
+}
+.normal-text {
+  font-size: 20px;
+  color: #fff;
+}
+.small-text {
+  font-size: 14px;
+  color: #808080;
+}
+
+.intro-text {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.intro-text-2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.gmail {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: Arial;
+  color: #fff;
+  background-color: black;
+  border: solid 2px #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  float: right;
+  translate: -40px -76px;
+}
+.gmail:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  border: solid 2px #d44cd6;
+}
+
+.ig {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: Arial;
+  width: 75px;
+  height: 20px;
+  color: white;
+  background-color: black;
+  border: solid 2px white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ig:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  border: solid 2px #d44cd6;
+}
+
+@media (max-width: 768px;) {
+  .big-tex {
+    font-size: 40px;
+  }
+}
+
+/* ! Header */
+
+.header {
+  width: 100%;
+  padding: 42px;
+  align-items: center;
+}
+
+.logo {
+  z-index: 1;
+  width: 180px;
+  height: 95px;
+  margin: 10px;
+}
+
+/* Menu DropDowm */
+#drop-menu {
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+}
+
+/*menu*/
+
+ul#menu {
+  margin: -70px 232px;
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 960px;
+  background-color: #000;
+  font-size: 80%;
+}
+
+ul#menu li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: block;
+  border-right: 1px solid #d44cd6;
+  position: relative;
+}
+
+ul#menu li a {
+  float: left;
+  padding: 12px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul#menu li a:hover {
+  background: #d44cd6;
+  color: #fff;
+}
+
+ul#menu ul {
+  margin: 2px 0 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 9999;
+  background: #000;
+}
+
+ul#menu li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul#menu ul li {
+  float: none;
+  display: block;
+  border: 0;
+}
+
+ul#menu ul a {
+  padding: 10px;
+  width: 130px;
+  display: block;
+  white-space: nowrap;
+  float: none;
+  text-transform: none;
+}
+
+ul#menu ul a:hover {
+  background-color: #d44cd6;
+  color: #fff;
+}
+
+/* Close Menu DropDown */
+
+@media (max-width: 767px) {
+  .cta {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: #000;
+    height: 100vh;
+    padding-top: 80px;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu li a {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .menu--open {
+    right: 0%;
+  }
+
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+
+  .hamburger span {
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+/* ! Hero */
+
+.hero {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url("immagini/sfondo.png") no-repeat center center;
+  background-size: cover;
+}
+
+.hero__content {
+  translate: 40px;
+}
+
+.hero__content h1,
+.hero__content p {
+  color: #fff;
+}
+
+/* Product */
+.fashion_section {
+  width: 100%;
+  float: left;
+  padding-bottom: 150px;
+}
+
+.fashion_taital {
+  width: 100%;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fashion_section_2 {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.box_main {
+  width: 100%;
+  background-color: #000;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0px 0 30px 10px #161616;
+  margin-bottom: 50px;
+}
+
+.shirt_text {
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.price_text {
+  width: 100%;
+  font-size: 16px;
+  color: #d44cd6;
+  text-align: center;
+  margin: 0px;
+}
+
+.tshirt_img {
+  width: 100%;
+  text-align: center;
+  margin: 50px -22px;
+  min-height: 370px;
+}
+
+.btn_main {
+  width: 100%;
+  display: flex;
+}
+
+.buy_bt {
+  float: left;
+  width: 100%;
+}
+
+.buy_bt a {
+  width: 100%;
+  font-size: 16px;
+  color: #d44cd6;
+  background-color: transparent;
+  text-align: right;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buy_bt a:hover {
+  background-color: transparent;
+  color: #5d215e;
+  text-decoration: none;
+}
+
+.seemore_bt {
+  width: 100%;
+  float: right;
+  text-align: right;
+  transition: 0.3s;
+}
+
+.seemore_bt a {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  text-align: right;
+  transition: 0.3s;
+}
+
+.seemore_bt a:hover {
+  background-color: transparent;
+  color: #808080;
+  text-decoration: none;
+}
+
+#main_slider a.carousel-control-next {
+  right: 615px;
+  top: 105%;
+}
+
+#main_slider a.carousel-control-prev {
+  left: 615px;
+  top: 105%;
+}
+
+#main_slider .carousel-control-next,
+#main_slider .carousel-control-prev {
+  width: 55px;
+  height: 55px;
+  background-color: #30302e;
+  opacity: 1;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#main_slider .carousel-control-next:focus,
+#main_slider .carousel-control-next:hover,
+#main_slider .carousel-control-prev:focus,
+#main_slider .carousel-control-prev:hover {
+  color: #fff;
+  background-color: #d44cd6;
+}
+
+/* fashion section end */
+/* Menu dropdown */
+
+/* Scritta Animata */
+.hero {
+  display: flex;
+}
+.hero .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.hero .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #d44cd6;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  left: 0;
+  height: 120%;
+  width: 100%;
+  border-left: 2px solid #d44cd6;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -70px 0 70px;
+  }
+}
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #d44cd6;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Segoe UI", Arial, sans-serif;
+  position: relative;
+  color: #fff;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  translate: -22px -20px;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+/* Page Product */
+.but-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: Arial;
+  color: #802782;
+  background-color: black;
+  border: solid 2px #802782;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.but-btn:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fde1fe;
+  border: solid 2px #d44cd6;
+  box-shadow: 0px 0 20px 5px #d44cd6;
+}
+
+.box2 {
+  translate: 0 200px;
+  margin-right: -302px;
+  margin-left: -243px;
+}
